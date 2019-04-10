@@ -23,7 +23,7 @@ router.get('/:id', (req, res, next) => {
 
 /* GET posts edit /posts/:id/edit */
 router.get('/:id/edit', (req, res, next) => {
-    res.send('/posts')
+    res.send('EDIT /posts')
 });
 
 /* PUT posts update /posts/:id */
@@ -37,13 +37,3 @@ router.delete('/:id', (req, res, next) => {
 });
 
 module.exports = router;
-
-``` 
-    GET     index       /posts
-    GET     new         /posts/new
-    POST    create      /posts
-    GET     show        /posts/:id
-    GET     edit        /posts/:id/edit
-    PUT     update      /posts/:id
-    DELETE  destroy     /posts/:id
-```
