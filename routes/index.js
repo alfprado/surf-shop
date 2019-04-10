@@ -46,13 +46,13 @@ router.put('/forgot', (req, res, next) => {
   res.render('PUT /forgot');
 });
 
-/* GET /reset */
-router.get('/reset', (req, res, next) => {
+/* GET /reset/:token */
+router.get('/reset/:token', (req, res, next) => {
   res.render('GET /reset/:token');
 });
 
-/* PUT /reset */
-router.get('/reset', (req, res, next) => {
+/* PUT /reset/:token */
+router.get('/reset/:token', (req, res, next) => {
   res.render('PUT /reset/:token');
 });
 
